@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['m_5fformatter',['M_formatter',['../classspdlog_1_1details_1_1_m__formatter.html',1,'spdlog::details::M_formatter'],['../classspdlog_1_1details_1_1m__formatter.html',1,'spdlog::details::m_formatter']]],
+  ['m_5fformatter',['m_formatter',['../classspdlog_1_1details_1_1m__formatter.html',1,'spdlog::details::m_formatter'],['../classspdlog_1_1details_1_1_m__formatter.html',1,'spdlog::details::M_formatter']]],
   ['m_5fformatter',['m_formatter',['../classspdlog_1_1details_1_1m__formatter.html#a218eb07d23a3b69557b9347eae493dc3',1,'spdlog::details::m_formatter::m_formatter()'],['../classspdlog_1_1details_1_1_m__formatter.html#a6d27aa27b0ede646701b4b5138afe4cd',1,'spdlog::details::M_formatter::M_formatter()']]],
   ['magenta',['magenta',['../classspdlog_1_1sinks_1_1ansicolor__sink.html#a9a665375cbfd2c7ab4a07004df386fce',1,'spdlog::sinks::ansicolor_sink::magenta()'],['../namespacefmt_1_1v5.html#afcb360f8436b357c4d6f62a3fd73afc0a4c2a4a7078da0ac6733464eacfd00f86',1,'fmt::v5::magenta()'],['../namespacefmt_1_1v5.html#ab2f4feae8b2e17242b5f089a38e23fbaa4c2a4a7078da0ac6733464eacfd00f86',1,'fmt::v5::magenta()']]],
   ['major',['major',['../struct_livox_sdk_version.html#a0099180644f0153f57b0a67f0a96d1ac',1,'LivoxSdkVersion']]],

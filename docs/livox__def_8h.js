@@ -8,6 +8,8 @@ var livox__def_8h =
     [ "LivoxExtendSpherPoint", "struct_livox_extend_spher_point.html", "struct_livox_extend_spher_point" ],
     [ "LivoxDualExtendRawPoint", "struct_livox_dual_extend_raw_point.html", "struct_livox_dual_extend_raw_point" ],
     [ "LivoxDualExtendSpherPoint", "struct_livox_dual_extend_spher_point.html", "struct_livox_dual_extend_spher_point" ],
+    [ "LivoxTripleExtendRawPoint", "struct_livox_triple_extend_raw_point.html", "struct_livox_triple_extend_raw_point" ],
+    [ "LivoxTripleExtendSpherPoint", "struct_livox_triple_extend_spher_point.html", "struct_livox_triple_extend_spher_point" ],
     [ "LivoxImuPoint", "struct_livox_imu_point.html", "struct_livox_imu_point" ],
     [ "LidarErrorCode", "struct_lidar_error_code.html", "struct_lidar_error_code" ],
     [ "HubErrorCode", "struct_hub_error_code.html", "struct_hub_error_code" ],
@@ -43,6 +45,7 @@ var livox__def_8h =
     [ "KeyValueParam", "struct_key_value_param.html", "struct_key_value_param" ],
     [ "GetDeviceParameterResponse", "struct_get_device_parameter_response.html", "struct_get_device_parameter_response" ],
     [ "GetDeviceParameterRequest", "struct_get_device_parameter_request.html", "struct_get_device_parameter_request" ],
+    [ "ResetDeviceParameterRequest", "struct_reset_device_parameter_request.html", "struct_reset_device_parameter_request" ],
     [ "LidarSetExtrinsicParameterRequest", "struct_lidar_set_extrinsic_parameter_request.html", "struct_lidar_set_extrinsic_parameter_request" ],
     [ "LidarGetExtrinsicParameterResponse", "struct_lidar_get_extrinsic_parameter_response.html", "struct_lidar_get_extrinsic_parameter_response" ],
     [ "LidarGetFanStateResponse", "struct_lidar_get_fan_state_response.html", "struct_lidar_get_fan_state_response" ],
@@ -87,13 +90,17 @@ var livox__def_8h =
     ] ],
     [ "DeviceParamKeyName", "livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019", [
       [ "kKeyDefault", "livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019a479c08b95478412075f618561c96b1a0", null ],
-      [ "kKeyHighSensetivity", "livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019aaeb84269f66df01a511b2922c1bbb299", null ]
+      [ "kKeyHighSensetivity", "livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019aaeb84269f66df01a511b2922c1bbb299", null ],
+      [ "kKeyScanPattern", "livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019a99d49b7e2aadf65069a0b5abc1a71f89", null ],
+      [ "kKeySlotNum", "livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019a366ecc17095a65be4d5b83d7cf4aef01", null ]
     ] ],
     [ "DeviceType", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9", [
       [ "kDeviceTypeHub", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9a106cbd246757e6e662cd7f6a9674cc8c", null ],
       [ "kDeviceTypeLidarMid40", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9a5659e6d47fc3ee0a045210d3e9c4e3f9", null ],
       [ "kDeviceTypeLidarTele", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9ac7ac7fdbfd52ad17b275cef4c74453f3", null ],
-      [ "kDeviceTypeLidarHorizon", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9a357d13b3ac8641a1347832e70ce539ea", null ]
+      [ "kDeviceTypeLidarHorizon", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9a357d13b3ac8641a1347832e70ce539ea", null ],
+      [ "kDeviceTypeLidarMid70", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9a81add6b29c1843b02c911395122c27e0", null ],
+      [ "kDeviceTypeLidarAvia", "livox__def_8h.html#ad258d4c51629346fceac4679b3209ad9a8c46338d40e2ce369dad19238112e4d7", null ]
     ] ],
     [ "ImuFreq", "livox__def_8h.html#ac85ce63b24f69b6feeaef0e6912fe651", [
       [ "kImuFreq0Hz", "livox__def_8h.html#ac85ce63b24f69b6feeaef0e6912fe651ab65e3877bd7ca03d73ca716070fe0a51", null ],
@@ -122,6 +129,10 @@ var livox__def_8h =
       [ "kLidarModePowerSaving", "livox__def_8h.html#affc3c75e14e794567016e1ac9b223a84a0feb50e1a30f36722f358ec5a1558729", null ],
       [ "kLidarModeStandby", "livox__def_8h.html#affc3c75e14e794567016e1ac9b223a84a652a398f78f41ee73bb6e5748b530fdd", null ]
     ] ],
+    [ "LidarScanPattern", "livox__def_8h.html#ad6cfb25935f8bbb87859657a9c8ffcb2", [
+      [ "kNoneRepetitiveScanPattern", "livox__def_8h.html#ad6cfb25935f8bbb87859657a9c8ffcb2a0f70bf2066b37159ddd7cd7f1be5b1eb", null ],
+      [ "kRepetitiveScanPattern", "livox__def_8h.html#ad6cfb25935f8bbb87859657a9c8ffcb2af12f341de090ebd52886b930f889c529", null ]
+    ] ],
     [ "LidarState", "livox__def_8h.html#ac452bffa284c87aa7cafa14ff1c1049e", [
       [ "kLidarStateInit", "livox__def_8h.html#ac452bffa284c87aa7cafa14ff1c1049ea7ec237abe09cd5a1001860a87503badb", null ],
       [ "kLidarStateNormal", "livox__def_8h.html#ac452bffa284c87aa7cafa14ff1c1049ea174d099cbeaa59a1ef150697abadabf6", null ],
@@ -145,7 +156,8 @@ var livox__def_8h =
     [ "PointCloudReturnMode", "livox__def_8h.html#a28f5e73f1bf24a47e70d185fd23412df", [
       [ "kFirstReturn", "livox__def_8h.html#a28f5e73f1bf24a47e70d185fd23412dfa75bbd597bd2e524551591b40469b02e0", null ],
       [ "kStrongestReturn", "livox__def_8h.html#a28f5e73f1bf24a47e70d185fd23412dfa87ba61d29286b30c132d697173d3940d", null ],
-      [ "kDualReturn", "livox__def_8h.html#a28f5e73f1bf24a47e70d185fd23412dfaf6aac11ce31f7df15a215d2817560a61", null ]
+      [ "kDualReturn", "livox__def_8h.html#a28f5e73f1bf24a47e70d185fd23412dfaf6aac11ce31f7df15a215d2817560a61", null ],
+      [ "kTripleReturn", "livox__def_8h.html#a28f5e73f1bf24a47e70d185fd23412dfac1a7b820fab7389dacf54c6bc6c87399", null ]
     ] ],
     [ "PointDataType", "livox__def_8h.html#aef6de49a2449336910ae8424c53728ab", [
       [ "kCartesian", "livox__def_8h.html#aef6de49a2449336910ae8424c53728aba6e123217bd3d43ce8abfe349308caa69", null ],
@@ -155,6 +167,8 @@ var livox__def_8h =
       [ "kDualExtendCartesian", "livox__def_8h.html#aef6de49a2449336910ae8424c53728abad93c2841ec535d4c15bf403968fd30c0", null ],
       [ "kDualExtendSpherical", "livox__def_8h.html#aef6de49a2449336910ae8424c53728aba95a58aee73fab012b68329188900cea6", null ],
       [ "kImu", "livox__def_8h.html#aef6de49a2449336910ae8424c53728aba4c2be67e4ac9b66e5387cc067add7e4c", null ],
+      [ "kTripleExtendCartesian", "livox__def_8h.html#aef6de49a2449336910ae8424c53728aba2d747fa343a9879ec2ff5d8223932a0e", null ],
+      [ "kTripleExtendSpherical", "livox__def_8h.html#aef6de49a2449336910ae8424c53728aba1a99a81b849d0fa220291ef5395eb00d", null ],
       [ "kMaxPointDataType", "livox__def_8h.html#aef6de49a2449336910ae8424c53728aba67cebf5fa0150b50db3992fecdcd3e1c", null ]
     ] ],
     [ "TimestampType", "livox__def_8h.html#a5b99e69700d73fbb898014393e993ca0", [

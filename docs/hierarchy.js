@@ -359,6 +359,8 @@ var hierarchy =
     [ "LivoxRawPoint", "struct_livox_raw_point.html", null ],
     [ "LivoxSdkVersion", "struct_livox_sdk_version.html", null ],
     [ "LivoxSpherPoint", "struct_livox_spher_point.html", null ],
+    [ "LivoxTripleExtendRawPoint", "struct_livox_triple_extend_raw_point.html", null ],
+    [ "LivoxTripleExtendSpherPoint", "struct_livox_triple_extend_spher_point.html", null ],
     [ "fmt::v5::internal::locale_ref", "classfmt_1_1v5_1_1internal_1_1locale__ref.html", null ],
     [ "spdlog::details::log_msg", "structspdlog_1_1details_1_1log__msg.html", null ],
     [ "spdlog::logger", "classspdlog_1_1logger.html", [
@@ -396,6 +398,7 @@ var hierarchy =
     [ "livox::Protocol", "classlivox_1_1_protocol.html", null ],
     [ "RainFogSuppressRequestItem", "struct_rain_fog_suppress_request_item.html", null ],
     [ "spdlog::details::registry", "classspdlog_1_1details_1_1registry.html", null ],
+    [ "ResetDeviceParameterRequest", "struct_reset_device_parameter_request.html", null ],
     [ "fmt::v5::internal::function< Result >::result< T >", "structfmt_1_1v5_1_1internal_1_1function_1_1result.html", null ],
     [ "fmt::v5::internal::result_of< typename >", "structfmt_1_1v5_1_1internal_1_1result__of.html", null ],
     [ "fmt::v5::internal::result_of< F(Args...)>", "structfmt_1_1v5_1_1internal_1_1result__of_3_01_f_07_args_8_8_8_08_4.html", null ],

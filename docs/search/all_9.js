@@ -2,7 +2,7 @@ var searchData=
 [
   ['arg_5fformatter_5fbase',['arg_formatter_base',['../classfmt_1_1v5_1_1basic__writer.html#a12c04f5659906e93c2418a4eb6358bd2',1,'fmt::v5::basic_writer']]],
   ['arg_5fmap_3c_20context_20_3e',['arg_map&lt; Context &gt;',['../classfmt_1_1v5_1_1basic__format__arg.html#a7974100f026be256213827458684be38',1,'fmt::v5::basic_format_arg::arg_map&lt; Context &gt;()'],['../classfmt_1_1v5_1_1basic__format__args.html#a7974100f026be256213827458684be38',1,'fmt::v5::basic_format_args::arg_map&lt; Context &gt;()']]],
-  ['i_5fformatter',['I_formatter',['../classspdlog_1_1details_1_1_i__formatter.html',1,'spdlog::details::I_formatter'],['../classspdlog_1_1details_1_1i__formatter.html',1,'spdlog::details::i_formatter']]],
+  ['i_5fformatter',['i_formatter',['../classspdlog_1_1details_1_1i__formatter.html',1,'spdlog::details::i_formatter'],['../classspdlog_1_1details_1_1_i__formatter.html',1,'spdlog::details::I_formatter']]],
   ['i_5fformatter',['I_formatter',['../classspdlog_1_1details_1_1_i__formatter.html#a33599ccfecedd0d409c91792ffa82fbc',1,'spdlog::details::I_formatter::I_formatter()'],['../classspdlog_1_1details_1_1i__formatter.html#a69d03626d465771f9b6f8ef302114b9c',1,'spdlog::details::i_formatter::i_formatter()']]],
   ['id',['id',['../struct_livox_eth_packet.html#acb370bd12205bd9d4218d264fdf81e52',1,'LivoxEthPacket::id()'],['../struct_device_info.html#a1025610698d5ebb8748e420b0dc0f827',1,'DeviceInfo::id()'],['../struct_connected_lidar_info.html#a0a2c04b55c719f4f719de502ada83b74',1,'ConnectedLidarInfo::id()']]],
   ['id_5fadapter',['id_adapter',['../structfmt_1_1v5_1_1internal_1_1id__adapter.html',1,'fmt::v5::internal']]],

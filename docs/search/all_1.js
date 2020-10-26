@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_5fformatter',['a_formatter',['../classspdlog_1_1details_1_1a__formatter.html',1,'spdlog::details::a_formatter'],['../classspdlog_1_1details_1_1_a__formatter.html',1,'spdlog::details::A_formatter']]],
-  ['a_5fformatter',['A_formatter',['../classspdlog_1_1details_1_1_a__formatter.html#aaa0b668428ff16e07a5258575b711955',1,'spdlog::details::A_formatter::A_formatter()'],['../classspdlog_1_1details_1_1a__formatter.html#a48d1f1eba77e826b69ff1e6eea389b63',1,'spdlog::details::a_formatter::a_formatter()']]],
+  ['a_5fformatter',['a_formatter',['../classspdlog_1_1details_1_1a__formatter.html#a48d1f1eba77e826b69ff1e6eea389b63',1,'spdlog::details::a_formatter::a_formatter()'],['../classspdlog_1_1details_1_1_a__formatter.html#aaa0b668428ff16e07a5258575b711955',1,'spdlog::details::A_formatter::A_formatter()']]],
   ['abs_5fvalue',['abs_value',['../structfmt_1_1v5_1_1basic__writer_1_1int__writer_1_1dec__writer.html#ac9041c9b005e35c05a5296f3233954e3',1,'fmt::v5::basic_writer::int_writer::dec_writer::abs_value()'],['../structfmt_1_1v5_1_1basic__writer_1_1int__writer_1_1bin__writer.html#aa24440fe129d052f4a8a628675d437c9',1,'fmt::v5::basic_writer::int_writer::bin_writer::abs_value()'],['../structfmt_1_1v5_1_1basic__writer_1_1int__writer_1_1num__writer.html#a94c9f59f76f17baa5e58a9f1d2d825d8',1,'fmt::v5::basic_writer::int_writer::num_writer::abs_value()']]],
   ['acc_5fx',['acc_x',['../struct_livox_imu_point.html#a7da57dc192678c551cb100b8ea003ac0',1,'LivoxImuPoint']]],
   ['acc_5fy',['acc_y',['../struct_livox_imu_point.html#a7ad3a99b0dab2bd5aaf2b5f547dad45a',1,'LivoxImuPoint']]],

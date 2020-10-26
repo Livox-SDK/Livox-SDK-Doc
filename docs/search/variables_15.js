@@ -1,6 +1,7 @@
 var searchData=
 [
   ['x',['x',['../struct_livox_raw_point.html#a9ebad707b8d7f23627b9542f6023a359',1,'LivoxRawPoint::x()'],['../struct_livox_point.html#aa3f338bfc60815306204df82ad86d8dc',1,'LivoxPoint::x()'],['../struct_livox_extend_raw_point.html#a00cd610c6be11d15108d282f6e533dd8',1,'LivoxExtendRawPoint::x()'],['../struct_extrinsic_parameter_request_item.html#af5c895c062c9059cb1ea5d133e239061',1,'ExtrinsicParameterRequestItem::x()'],['../struct_extrinsic_parameter_response_item.html#ae7d9f155e506db616a87dbad50815d96',1,'ExtrinsicParameterResponseItem::x()'],['../struct_lidar_set_extrinsic_parameter_request.html#af15b6387a525382ffefaf65ed6248e6c',1,'LidarSetExtrinsicParameterRequest::x()'],['../struct_lidar_get_extrinsic_parameter_response.html#adc48af745aa3f0fec63be171f96684db',1,'LidarGetExtrinsicParameterResponse::x()']]],
-  ['x1',['x1',['../struct_livox_dual_extend_raw_point.html#adf35e91cf67fc29f0600693d8b9ec406',1,'LivoxDualExtendRawPoint']]],
-  ['x2',['x2',['../struct_livox_dual_extend_raw_point.html#a4b20b8e1920b003e636f36b814f5c38b',1,'LivoxDualExtendRawPoint']]]
+  ['x1',['x1',['../struct_livox_dual_extend_raw_point.html#adf35e91cf67fc29f0600693d8b9ec406',1,'LivoxDualExtendRawPoint::x1()'],['../struct_livox_triple_extend_raw_point.html#a85aefb95a391949b381f6d36ea11e91c',1,'LivoxTripleExtendRawPoint::x1()']]],
+  ['x2',['x2',['../struct_livox_dual_extend_raw_point.html#a4b20b8e1920b003e636f36b814f5c38b',1,'LivoxDualExtendRawPoint::x2()'],['../struct_livox_triple_extend_raw_point.html#a91d7242176424f23acd31e51e9b46cab',1,'LivoxTripleExtendRawPoint::x2()']]],
+  ['x3',['x3',['../struct_livox_triple_extend_raw_point.html#aa48c90ea643a8ca502cb5ca9a23b0ee4',1,'LivoxTripleExtendRawPoint']]]
 ];

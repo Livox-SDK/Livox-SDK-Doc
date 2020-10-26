@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Livox SDK API
-   &#160;<span id="projectnumber">V2.1.1</span>
+   &#160;<span id="projectnumber">V2.2.0</span>
    </div>
   </td>
  </tr>
@@ -138,6 +138,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a1b71bca18888d9267e44be2ac33f5cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91d802143475cf47ef8d616d581c91d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#ae91d802143475cf47ef8d616d581c91d">GetDeviceParametersCallback</a>) (<a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> status, uint8_t handle, <a class="el" href="struct_get_device_parameter_response.html">GetDeviceParameterResponse</a> *response, void *client_data)</td></tr>
 <tr class="separator:ae91d802143475cf47ef8d616d581c91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b8a2e8d461f2a8898f92b81370b765"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#ad5b8a2e8d461f2a8898f92b81370b765">DeviceResetParametersCallback</a>) (<a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> status, uint8_t handle, <a class="el" href="struct_device_parameter_response.html">DeviceParameterResponse</a> *response, void *client_data)</td></tr>
+<tr class="separator:ad5b8a2e8d461f2a8898f92b81370b765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aec0dad2d3e20cb4105daec1377a66b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a4aec0dad2d3e20cb4105daec1377a66b">HubQueryLidarInformationCallback</a>) (<a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> status, uint8_t handle, <a class="el" href="struct_hub_query_lidar_information_response.html">HubQueryLidarInformationResponse</a> *response, void *client_data)</td></tr>
 <tr class="separator:a4aec0dad2d3e20cb4105daec1377a66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19660819daffa71769e3692afd81a512"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a19660819daffa71769e3692afd81a512">HubSetModeCallback</a>) (<a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> status, uint8_t handle, <a class="el" href="struct_hub_set_mode_response.html">HubSetModeResponse</a> *response, void *client_data)</td></tr>
@@ -232,8 +234,18 @@ Functions</h2></td></tr>
 <tr class="separator:aff5c1a8698bd63b05e98b6ec20ad2466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a64e8e5183bb74d018ef7c6b5a975e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a72a64e8e5183bb74d018ef7c6b5a975e">LidarGetHighSensitivityState</a> (uint8_t handle, <a class="el" href="livox__sdk_8h.html#ae91d802143475cf47ef8d616d581c91d">GetDeviceParametersCallback</a> cb, void *client_data)</td></tr>
 <tr class="separator:a72a64e8e5183bb74d018ef7c6b5a975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91bde8ea7a3117375be2aa1f619e7344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a91bde8ea7a3117375be2aa1f619e7344">DeviceResetAllParameters</a> (uint8_t handle, <a class="el" href="livox__sdk_8h.html#a4141b39df648fa07653f1d156977bb4a">CommonCommandCallback</a> cb, void *client_data)</td></tr>
-<tr class="separator:a91bde8ea7a3117375be2aa1f619e7344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535a1f10b5ebaa37d4e8f4d1eddf1311"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a535a1f10b5ebaa37d4e8f4d1eddf1311">LidarSetScanPattern</a> (uint8_t handle, <a class="el" href="livox__def_8h.html#ad6cfb25935f8bbb87859657a9c8ffcb2">LidarScanPattern</a> pattern, <a class="el" href="livox__sdk_8h.html#a1b71bca18888d9267e44be2ac33f5cbd">SetDeviceParametersCallback</a> cb, void *client_data)</td></tr>
+<tr class="separator:a535a1f10b5ebaa37d4e8f4d1eddf1311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c83f798ffb94be507e637bb9830992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#ae7c83f798ffb94be507e637bb9830992">LidarGetScanPattern</a> (uint8_t handle, <a class="el" href="livox__sdk_8h.html#ae91d802143475cf47ef8d616d581c91d">GetDeviceParametersCallback</a> cb, void *client_data)</td></tr>
+<tr class="separator:ae7c83f798ffb94be507e637bb9830992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0934daede7c741d0b9d2987fea3d2036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a0934daede7c741d0b9d2987fea3d2036">LidarSetSlotNum</a> (uint8_t handle, uint8_t slot, <a class="el" href="livox__sdk_8h.html#a1b71bca18888d9267e44be2ac33f5cbd">SetDeviceParametersCallback</a> cb, void *client_data)</td></tr>
+<tr class="separator:a0934daede7c741d0b9d2987fea3d2036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b333c968f1ec5df554af8137e1aea20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a7b333c968f1ec5df554af8137e1aea20">LidarGetSlotNum</a> (uint8_t handle, <a class="el" href="livox__sdk_8h.html#ae91d802143475cf47ef8d616d581c91d">GetDeviceParametersCallback</a> cb, void *client_data)</td></tr>
+<tr class="separator:a7b333c968f1ec5df554af8137e1aea20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8914d4d11c5037fc49a4ca71095208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a6c8914d4d11c5037fc49a4ca71095208">DeviceResetAllParameters</a> (uint8_t handle, <a class="el" href="livox__sdk_8h.html#ad5b8a2e8d461f2a8898f92b81370b765">DeviceResetParametersCallback</a> cb, void *client_data)</td></tr>
+<tr class="separator:a6c8914d4d11c5037fc49a4ca71095208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f24b2b9be771cb1a85df1ac5d4ed35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#ac9f24b2b9be771cb1a85df1ac5d4ed35">DeviceResetParameters</a> (uint8_t handle, <a class="el" href="livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019">DeviceParamKeyName</a> *keys, uint8_t num, <a class="el" href="livox__sdk_8h.html#ad5b8a2e8d461f2a8898f92b81370b765">DeviceResetParametersCallback</a> cb, void *client_data)</td></tr>
+<tr class="separator:ac9f24b2b9be771cb1a85df1ac5d4ed35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07f8f516e3454872c03f8a932e521dd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a07f8f516e3454872c03f8a932e521dd5">HubQueryLidarInformation</a> (<a class="el" href="livox__sdk_8h.html#a4aec0dad2d3e20cb4105daec1377a66b">HubQueryLidarInformationCallback</a> cb, void *client_data)</td></tr>
 <tr class="separator:a07f8f516e3454872c03f8a932e521dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4de64ea385ac14c39a3951c63dcf588a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="livox__sdk_8h.html#a4de64ea385ac14c39a3951c63dcf588a">HubSetMode</a> (<a class="el" href="struct_hub_set_mode_request.html">HubSetModeRequest</a> *req, uint16_t length, <a class="el" href="livox__sdk_8h.html#a19660819daffa71769e3692afd81a512">HubSetModeCallback</a> cb, void *client_data)</td></tr>
@@ -315,7 +327,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00178">178</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00183">183</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -385,6 +397,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad5b8a2e8d461f2a8898f92b81370b765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* DeviceResetParametersCallback) (<a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> status, uint8_t handle, <a class="el" href="struct_device_parameter_response.html">DeviceParameterResponse</a> *response, void *client_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><code>DeviceResetParameters'</code> response callback function. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>kStatusSuccess on successful return, kStatusTimeout on timeout, see <a class="el" href="livox__def_8h.html#ad7d6daf9bb143229dff3e2071c08ba1c">LivoxStatus</a> for other error code. </td></tr>
+    <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">response</td><td>response from the device. </td></tr>
+    <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00431">431</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af20793bf9227b07f07c27e83c4fb5fb5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +458,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00237">237</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00242">242</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +481,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00295">295</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00300">300</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +504,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00359">359</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00366">366</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +527,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00558">558</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00633">633</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +550,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00484">484</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00559">559</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +573,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00581">581</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00656">656</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +596,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00685">685</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00760">760</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +619,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00633">633</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00708">708</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +642,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00390">390</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00465">465</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +665,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00431">431</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00506">506</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +688,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00540">540</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00615">615</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +711,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00514">514</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00589">589</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +734,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00458">458</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00533">533</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +757,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00659">659</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00734">734</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +780,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00411">411</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00486">486</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -768,7 +803,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00607">607</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00682">682</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +826,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00754">754</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00829">829</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -814,7 +849,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00807">807</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00882">882</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -837,7 +872,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00875">875</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00950">950</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -860,7 +895,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00841">841</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00916">916</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +918,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00328">328</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
+<p>Definition at line <a class="el" href="livox__sdk_8h_source.html#l00333">333</a> of file <a class="el" href="livox__sdk_8h_source.html">livox_sdk.h</a>.</p>
 
 </div>
 </div>
@@ -956,7 +991,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a91bde8ea7a3117375be2aa1f619e7344"></a>
+<a class="anchor" id="a6c8914d4d11c5037fc49a4ca71095208"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -969,7 +1004,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#a4141b39df648fa07653f1d156977bb4a">CommonCommandCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#ad5b8a2e8d461f2a8898f92b81370b765">DeviceResetParametersCallback</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -988,6 +1023,61 @@ Functions</h2></td></tr>
 <p>Reset LiDAR/Hub's All Parameters, see <a class="el" href="livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019">DeviceParamKeyName</a> for all parameters. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
+    <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kStatusSuccess on successful return, see <a class="el" href="livox__def_8h.html#ad7d6daf9bb143229dff3e2071c08ba1c">LivoxStatus</a> for other error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac9f24b2b9be771cb1a85df1ac5d4ed35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> DeviceResetParameters </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019">DeviceParamKeyName</a> *&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#ad5b8a2e8d461f2a8898f92b81370b765">DeviceResetParametersCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset LiDAR/Hub's Parameters, see <a class="el" href="livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019">DeviceParamKeyName</a> for all parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">keys</td><td>keys to reset, see <a class="el" href="livox__def_8h.html#a15259f1ab4c5a1277f25aad4b3004019">DeviceParamKeyName</a> for all parameters. </td></tr>
+    <tr><td class="paramname">num</td><td>num of keys to reset. </td></tr>
     <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
     <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
   </table>
@@ -1948,7 +2038,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>LiDAR Disable HighSensitivity. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>LiDAR Disable HighSensitivity. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#aff5c1a8698bd63b05e98b6ec20ad2466">LidarDisableHighSensitivity</a> only support for Tele/Avia. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
     <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
@@ -1989,7 +2080,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>LiDAR Enable HighSensitivity. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>LiDAR Enable HighSensitivity. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#ab1befd64c0f94cce6fee527af6e65348">LidarEnableHighSensitivity</a> only support for Tele/Avia. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
     <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
@@ -2113,7 +2205,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>LiDAR Get HighSensitivity State. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>LiDAR Get HighSensitivity State. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#a72a64e8e5183bb74d018ef7c6b5a975e">LidarGetHighSensitivityState</a> only support for Tele/Avia. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
     <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
@@ -2197,6 +2290,90 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get point cloud return mode. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#ac856d9a44d7cbf977862b0ad21776920">LidarGetPointCloudReturnMode</a> is not supported for Mid40/100. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
+    <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kStatusSuccess on successful return, see <a class="el" href="livox__def_8h.html#ad7d6daf9bb143229dff3e2071c08ba1c">LivoxStatus</a> for other error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae7c83f798ffb94be507e637bb9830992"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> LidarGetScanPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#ae91d802143475cf47ef8d616d581c91d">GetDeviceParametersCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LiDAR Get Scan Pattern. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#ae7c83f798ffb94be507e637bb9830992">LidarGetScanPattern</a> only support for Avia. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
+    <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kStatusSuccess on successful return, see <a class="el" href="livox__def_8h.html#ad7d6daf9bb143229dff3e2071c08ba1c">LivoxStatus</a> for other error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b333c968f1ec5df554af8137e1aea20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> LidarGetSlotNum </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#ae91d802143475cf47ef8d616d581c91d">GetDeviceParametersCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LiDAR Get Slot Number. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#a7b333c968f1ec5df554af8137e1aea20">LidarGetSlotNum</a> only support for Mid70/Avia. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
@@ -2498,8 +2675,106 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
-    <tr><td class="paramname">rmc</td><td>GPRMC format data. </td></tr>
+    <tr><td class="paramname">rmc</td><td>GPRMC/GNRMC format data. </td></tr>
     <tr><td class="paramname">rmc_length</td><td>lenth of gprmc. </td></tr>
+    <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
+    <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kStatusSuccess on successful return, see <a class="el" href="livox__def_8h.html#ad7d6daf9bb143229dff3e2071c08ba1c">LivoxStatus</a> for other error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a535a1f10b5ebaa37d4e8f4d1eddf1311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> LidarSetScanPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__def_8h.html#ad6cfb25935f8bbb87859657a9c8ffcb2">LidarScanPattern</a>&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#a1b71bca18888d9267e44be2ac33f5cbd">SetDeviceParametersCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LiDAR Set Scan Pattern. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#a535a1f10b5ebaa37d4e8f4d1eddf1311">LidarSetScanPattern</a> only support for Avia. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">pattern</td><td>scan pattern of LiDAR, see <a class="el" href="livox__def_8h.html#ad6cfb25935f8bbb87859657a9c8ffcb2">LidarScanPattern</a> for detail. </td></tr>
+    <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
+    <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kStatusSuccess on successful return, see <a class="el" href="livox__def_8h.html#ad7d6daf9bb143229dff3e2071c08ba1c">LivoxStatus</a> for other error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0934daede7c741d0b9d2987fea3d2036"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="livox__def_8h.html#a37eda6228bd591068a8a7d86eb08fe3f">livox_status</a> LidarSetSlotNum </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="livox__sdk_8h.html#a1b71bca18888d9267e44be2ac33f5cbd">SetDeviceParametersCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LiDAR Set Slot Number. </p><dl class="section note"><dt>Note</dt><dd><a class="el" href="livox__sdk_8h.html#a0934daede7c741d0b9d2987fea3d2036">LidarSetSlotNum</a> only support for Mid70/Avia. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>device handle. </td></tr>
+    <tr><td class="paramname">slot</td><td>slot number of LiDAR, range from 1 to 9. </td></tr>
     <tr><td class="paramname">cb</td><td>callback for the command. </td></tr>
     <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
   </table>
@@ -2926,6 +3201,12 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">handle</td><td>device handle. </td></tr>
     <tr><td class="paramname">cb</td><td>callback to receive point cloud data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>1: Don't do any blocking operations in callback function, it will affects further data's receiving; 2: For different device handle, callback to receive point cloud data will run on its own thread. If you bind different handle to same callback function, please make sure that operations in callback function are thread-safe; 3: callback function's data pointer will be invalid after callback fuction returns. It's recommended to copy all data_num of point cloud every time callback is triggered. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">client_data</td><td>user data associated with the command. </td></tr>
   </table>
   </dd>

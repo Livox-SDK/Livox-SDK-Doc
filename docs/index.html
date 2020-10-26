@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Livox SDK API
-   &#160;<span id="projectnumber">V2.1.1</span>
+   &#160;<span id="projectnumber">V2.2.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h2>Prerequisites</h2>
 <ul>
 <li>Ubuntu 14.04/Ubuntu 16.04/Ubuntu 18.04, both x86 and ARM (Nvidia TX2)</li>
-<li>Windows 7/10, Visual Studio 2015/2017</li>
+<li>Windows 7/10, Visual Studio 2015 Update3/2017</li>
 <li>C++11 compiler</li>
 </ul>
 <h1>2 Livox SDK Communication Protocol</h1>
@@ -134,7 +134,7 @@ Livox SDK Architecture</div></div>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;sudo apt install libapr1-dev</div></div><!-- fragment --><p>then</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd build &amp;&amp; cmake ..</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;make</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;sudo make install</div></div><!-- fragment --><h3>4.1.2 Windows 7/10</h3>
 <h4>Dependencies</h4>
-<p>Livox SDK supports Visual Studio 2015/2017 and requires install <a href="https://cmake.org/">CMake 3.0.0+</a> as dependencies.</p>
+<p>Livox SDK supports Visual Studio 2015 Update3/2017 and requires install <a href="https://cmake.org/">CMake 3.0.0+</a> as dependencies.</p>
 <p>In the Livox SDK directory, run the following commands to create the Visual Studio solution file. Generate the 32-bit project:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd Livox-SDK</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;.\third_party\apr\apr_build.bat</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cd build &amp;&amp; \</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cmake ..</div></div><!-- fragment --><p> Generate the 64-bit project: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd Livox-SDK</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;.\third_party\apr\apr_build.bat amd64</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cd build &amp;&amp; \</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cmake .. -G &quot;Visual Studio 15 2017 Win64&quot;</div></div><!-- fragment --> <h4>Compile Livox SDK</h4>
 <p>You can now compile the Livox SDK in Visual Studio.</p>

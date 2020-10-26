@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_5fformatter',['A_formatter',['../classspdlog_1_1details_1_1_a__formatter.html#aaa0b668428ff16e07a5258575b711955',1,'spdlog::details::A_formatter::A_formatter()'],['../classspdlog_1_1details_1_1a__formatter.html#a48d1f1eba77e826b69ff1e6eea389b63',1,'spdlog::details::a_formatter::a_formatter()']]],
+  ['a_5fformatter',['a_formatter',['../classspdlog_1_1details_1_1a__formatter.html#a48d1f1eba77e826b69ff1e6eea389b63',1,'spdlog::details::a_formatter::a_formatter()'],['../classspdlog_1_1details_1_1_a__formatter.html#aaa0b668428ff16e07a5258575b711955',1,'spdlog::details::A_formatter::A_formatter()']]],
   ['add_5fch',['add_ch',['../classspdlog_1_1details_1_1aggregate__formatter.html#aa4a450cafac2ed6ef1fdc6dbda962ac6',1,'spdlog::details::aggregate_formatter']]],
   ['add_5fsink',['add_sink',['../classspdlog_1_1sinks_1_1dist__sink.html#ae2250f59f23ecaf3214da6059198ad3c',1,'spdlog::sinks::dist_sink']]],
   ['add_5fthousands_5fsep',['add_thousands_sep',['../classfmt_1_1v5_1_1internal_1_1add__thousands__sep.html#abf5e4ae8e94f8574fcd68d2f049df8d2',1,'fmt::v5::internal::add_thousands_sep']]],

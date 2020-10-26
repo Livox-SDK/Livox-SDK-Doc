@@ -20,6 +20,8 @@ var searchData=
   ['livoxrawpoint',['LivoxRawPoint',['../struct_livox_raw_point.html',1,'']]],
   ['livoxsdkversion',['LivoxSdkVersion',['../struct_livox_sdk_version.html',1,'']]],
   ['livoxspherpoint',['LivoxSpherPoint',['../struct_livox_spher_point.html',1,'']]],
+  ['livoxtripleextendrawpoint',['LivoxTripleExtendRawPoint',['../struct_livox_triple_extend_raw_point.html',1,'']]],
+  ['livoxtripleextendspherpoint',['LivoxTripleExtendSpherPoint',['../struct_livox_triple_extend_spher_point.html',1,'']]],
   ['locale_5fref',['locale_ref',['../classfmt_1_1v5_1_1internal_1_1locale__ref.html',1,'fmt::v5::internal']]],
   ['log_5fmsg',['log_msg',['../structspdlog_1_1details_1_1log__msg.html',1,'spdlog::details']]],
   ['logger',['logger',['../classspdlog_1_1logger.html',1,'spdlog']]]
